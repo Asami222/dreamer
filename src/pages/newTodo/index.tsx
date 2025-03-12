@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import styled from "styled-components";
 import Image from "next/image";
 import Button3 from 'components/atoms/Button3';
@@ -33,11 +34,11 @@ const NewTodo: NextPage = () => {
           </Text>
         </Box>
         <Flex $flexDirection='column' $gap="16px" $width='90%' $margin="0 auto">
-          <Button3 as="a" href="/newTodo/year">年単位</Button3>
-          <Button3 as="a" href="/newTodo/month">月単位</Button3>
-          <Button3 as="a" href="/newTodo/week">週単位</Button3>
-          <Button3 as="a" href="/newTodo/day">日単位</Button3>
-          <Button3 as="a" href="/newTodo/time">時間単位</Button3>
+          <Button3 as={Link} href="/newTodo/year">年単位</Button3>
+          <Button3 as={Link} href="/newTodo/month">月単位</Button3>
+          <Button3 as={Link} href="/newTodo/week">週単位</Button3>
+          <Button3 as={Link} href="/newTodo/day">日単位</Button3>
+          <Button3 as={Link} href="/newTodo/time">時間単位</Button3>
         </Flex>
       </Flex>
     </Layout>

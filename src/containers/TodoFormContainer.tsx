@@ -63,7 +63,7 @@ const TodoFormContainer = ({
       category: category,
       imageUrl: todoImage,
       blurDataUrl: '',
-      owner: authUser,
+      owner: { id: authUser.id, username: authUser.username },
     }
 
     try {

@@ -285,9 +285,7 @@ const Header = () => {
                       {({ focus }) => (
                         <Flex $gap="8px" $alignItems='center'>
                           <LogoutIcon size={20} color={focus ? 'borderDash' : 'text'}/>
-                          <StyledButton onClick={handleClick} label='ログアウト' focus={focus}>
-                            
-                          </StyledButton>
+                          <StyledButton onClick={handleClick} label='ログアウト' focus={focus} />
                         </Flex>
                       )}
                     </MenuItem>
@@ -298,7 +296,7 @@ const Header = () => {
               } else {
                 return (
                   <Link href="/signin">
-                    <StyledText $color='placeholder' $fontSize='medium' $fontWeight='500'>サインイン</StyledText>
+                    <StyledText $color='placeholder' $fontSize='medium' $fontWeight='500'>ログイン</StyledText>
                   </Link>
                 )
               }

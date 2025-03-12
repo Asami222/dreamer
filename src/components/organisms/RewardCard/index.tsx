@@ -100,8 +100,6 @@ const RewardCard =({
       }
     },[starNum, totalStar])
 
-    console.log(isOpen)
-  
   return (
       <Flex $gap="16px" $alignItems='center' $width="320px">
       { rewardImageUrl &&

@@ -21,7 +21,7 @@ const SigninPage: NextPage = () => {
 
   const handleSignin = async(err?: Error) => {
     if(authUser && !err) {
-        await router.refresh()
+         router.refresh()
     }
   }
 
@@ -51,7 +51,8 @@ const SigninPage: NextPage = () => {
               alt=""
               width={249}
               height={355}
-              priority
+              placeholder="blur"
+              blurDataURL={'/images/signinImage.webp'}
             />
           </Box>
           <Box $width="100%">

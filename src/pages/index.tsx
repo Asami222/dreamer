@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 import Flex from "components/layout/Flex";
@@ -40,7 +41,7 @@ const Home = () => {
       </StyledBox>
       <Button2 
         $selectcolor="Pink"
-        as="a"
+        as={Link}
         href="/signin"
       >
         はじめる

@@ -22,7 +22,7 @@ const AddTodoPage: NextPage = () => {
   const slug: Category2 = router.query.slug as Category2
   const { authUser } = useAuthContext()
   useAuthGuard()
-  console.log(authUser)
+ 
   const handleSave = (err?: Error) => {
     if(authUser && !err) {
       router.push(`/users/${authUser.id}`)

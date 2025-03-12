@@ -78,7 +78,7 @@ const SigninForm = ({ onSign }: SigninFormProps) => {
           </Box>
       </Box>
       <Box $margin="0 auto">
-        <Button2 type='submit' $selectcolor='Pink'>サインイン</Button2>
+        <Button2 type='submit' $selectcolor='Pink'>ログイン</Button2>
       </Box>
       </Flex>
     </form>

@@ -25,7 +25,7 @@ export type Todo = {
   imageUrl?: string
   blurDataUrl?: string
   starNum?: number
-  owner: User
+  owner: Pick<User, "id" | "username">
 }
 
 export type Reward = {
@@ -33,7 +33,7 @@ export type Reward = {
   name: string
   starPieces: number
   imageUrl: string
-  owner: Pick<User, "id" | "username">;
+  owner: Pick<User, "id" | "username">
 }
 
 export type GotReward = {
@@ -41,7 +41,7 @@ export type GotReward = {
   name: string
   starPieces: number
   time: string
-  owner: Pick<User, "id" | "username">;
+  owner: Pick<User, "id" | "username">
 }
 
 export type TotalStar = {

@@ -99,7 +99,7 @@ const Todo: NextPage<TodoYearProps> = ({
   useEffect(() => {
     setTodo(todos)
   }, [setTodo, todos]);
-  console.log(todos)
+  
   const yearCategory = myTodos.filter(todo => todo.category === 'year')
   const monthCategory = myTodos.filter(todo => todo.category === 'month')
   const weekCategory = myTodos.filter(todo => todo.category === 'week')
