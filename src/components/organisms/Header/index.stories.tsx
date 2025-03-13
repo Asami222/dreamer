@@ -11,12 +11,12 @@ export const Login = () => {
   const authUser = {
     id: 1,
     username: 'dummy',
+    password: '345',
     displayName: 'Taketo Ypshida',
-    email: 'test@example.com',
     profileImageUrl: '/images/bear1.png',
-    description: '',
     dream: '医者',
-    period: '2028年'
+    limit: '2028年',
+    numberOfStars: 20
   }
 
   const ChildComponent = () => {

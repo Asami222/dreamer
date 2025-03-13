@@ -48,7 +48,8 @@ export default {
       },
     },
   },
-} as Meta<typeof ChecklistIcon>
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+} as any as Meta<typeof ChecklistIcon>
 
 const Template: StoryFn<typeof ChecklistIcon> = (args) => (
   <>

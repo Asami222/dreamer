@@ -45,7 +45,7 @@ const Template: StoryFn<typeof ShapeImage> = (args) => (
 )
 
 export const Circle = Template.bind({})
-Circle.args = { src: '/images/bear1.png', shape: 'circle' , width: 100, height: 100 }
+Circle.args = { src: '/images/bear1.png', shape: 'circle' , width: '100', height: '100' }
 
 export const Square = Template.bind({})
-Square.args = { src: '/images/bear1.png', shape: 'square', width: 100, height: 100 }
+Square.args = { src: '/images/bear1.png', shape: 'square', width: '100', height: '100' }

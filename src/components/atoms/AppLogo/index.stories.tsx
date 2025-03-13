@@ -8,6 +8,5 @@ export default {
 type Story = StoryObj<typeof AppLogo>
 
 export const Base: Story = {
-  render: () => <AppLogo />
+  render: () => <AppLogo width="80px"/>
 }
-

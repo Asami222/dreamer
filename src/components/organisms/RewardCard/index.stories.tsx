@@ -60,24 +60,24 @@ const Template: StoryFn<typeof Reward> = (args) => (
 
 export const Reward1 = Template.bind({})
 Reward1.args = {
-  id: 1,
-  imageUrl: '/images/bear1.png',
+  rewardId: 1,
+  rewardImageUrl: '/images/bear1.png',
   reward: 'テディベア',
   starNum: 100,
 }
 
 export const Reward2 = Template.bind({})
 Reward2.args = {
-  id: 2,
-  imageUrl: '/images/macaron.png',
+  rewardId: 2,
+  rewardImageUrl: '/images/macaron.png',
   reward: 'マカロン',
   starNum: 10,
 }
 
 export const Reward3 = Template.bind({})
 Reward3.args = {
-  id: 3,
-  imageUrl: '/images/icecream.png',
+  rewardId: 3,
+  rewardImageUrl: '/images/icecream.png',
   reward: 'アイスクリーム',
   starNum: 10,
 }

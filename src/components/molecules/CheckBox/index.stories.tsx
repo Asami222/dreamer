@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react'
 import CheckBox from './index'
+import { SetStateAction } from 'react'
 
 export default {
   title: 'Molecules/CheckBox',
@@ -14,7 +15,10 @@ export default {
 } as Meta<typeof CheckBox>
 
 const Template: StoryFn<typeof CheckBox> = () => (
-  <CheckBox  />
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  <CheckBox isChecked={false} setIsChecked={function (value: SetStateAction<boolean>): void {
+    throw new Error('Function not implemented.')
+  } }  />
 )
 
 export const WithLabel = Template.bind({})

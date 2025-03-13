@@ -58,11 +58,11 @@ const Template: StoryFn<typeof Button1> = (args) => <Button1 {...args} />
 
 // Primaryボタン
 export const Primary = Template.bind({})
-Primary.args = { $variant: 'primary', children: 'Primary Button', selectColor: 'Orange' }
+Primary.args = { $variant: 'primary', children: 'Primary Button', $selectColor: 'Orange' }
 
 // Secondaryボタン
 export const Secondary = Template.bind({})
-Secondary.args = { $variant: 'secondary', children: 'Secondary Button', selectColor: 'Pink' }
+Secondary.args = { $variant: 'secondary', children: 'Secondary Button', $selectColor: 'Pink' }
 
 // Disabledボタン
 export const Disabled = Template.bind({})

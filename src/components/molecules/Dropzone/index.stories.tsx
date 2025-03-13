@@ -50,7 +50,8 @@ export default {
       },
     },
   },
-} as Meta<typeof Dropzone>
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+} as any as Meta<typeof Dropzone>
 
 const Template: StoryFn<typeof Dropzone> = (args) => {
   const [ files, setFiles ] = useState<File[]>([])
@@ -60,6 +61,7 @@ const Template: StoryFn<typeof Dropzone> = (args) => {
     args && args.onDrop && args.onDrop(files)
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchData = async () => {
     const res = await fetch('/images/bear1.png')
     const blob = await res.blob()
@@ -69,7 +71,7 @@ const Template: StoryFn<typeof Dropzone> = (args) => {
 
   useEffect(() => {
     fetchData()
-  },[])
+  },[fetchData])
 
   return (
     <>

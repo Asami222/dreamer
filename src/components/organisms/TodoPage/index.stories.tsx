@@ -76,7 +76,7 @@ Todo1.args = {
   id: 1,
   imageUrl: '/images/icecream.png',
   todo: '資格取得',
-  limit: '期限 1年（20XX年までに）',
+  limit: [3],
   rate: 3,
   detail: '◯◯になるために20XX年までに△△の資格を取得する',
 }
@@ -85,7 +85,7 @@ export const Todo2 = Template.bind({})
 Todo2.args = {
   id: 1,
   todo: '資格取得',
-  limit: '期限 1年（20XX年までに）',
+  limit: [5],
   rate: 7,
   detail: '◯◯になるために20XX年までに△△の資格を取得する',
 }

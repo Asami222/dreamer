@@ -58,7 +58,7 @@ const Template: StoryFn<typeof Button2> = (args) => <Button2 {...args} />
 
 // Primaryボタン
 export const Primary = Template.bind({})
-Primary.args = { children: 'Primary Button', $hasError: false, selectColor: 'Red' }
+Primary.args = { children: 'Primary Button', $hasError: false, $selectcolor: 'Red' }
 
 // Secondaryボタン
 export const Secondary = Template.bind({})
