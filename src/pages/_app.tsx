@@ -1,4 +1,3 @@
-//import "@/styles/globals.css";
 import { Roboto, M_PLUS_1p } from 'next/font/google';
 import type { AppProps } from "next/app";
 import Head from 'next/head';
@@ -7,7 +6,6 @@ import GlobalSpinner from 'components/organisms/GlobalSpinner'
 import { AuthContextProvider, useAuthContext } from 'contexts/AuthContext'
 import GlobalSpinnerContextProvider from 'contexts/GlobalSpinnerContext'
 import { SWRConfig } from 'swr'
-//import type { User } from 'types/data'
 import type { ApiContext } from 'types/data'
 import { fetcher } from 'utils'
 import { theme } from 'themes';
@@ -15,12 +13,14 @@ import TotalStarContextProvider from 'contexts/TotalStarContext';
 import { MyTodosContextProvider } from 'contexts/TodoContext';
 import { MyRewardsContextProvider } from 'contexts/RewardContext';
 import { GotRewardContextProvider } from 'contexts/GotRewardContext';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_NAME, SITE_IMAGE, SITE_IMAGE_WIDTH, SITE_IMAGE_HEIGHT } from 'lib/site-meta';
 
 export const roboto = Roboto({
   weight: ['300','400','500'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-roboto',
+  preload: false
 });
 
 export const m_plus_1p = M_PLUS_1p({
@@ -28,15 +28,9 @@ export const m_plus_1p = M_PLUS_1p({
   subsets: ['latin'],
   variable: '--font-m-plus-1p',
   display: 'swap',
+  preload: false
 })
-/*
-const ephesis = Ephesis({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-ephesis',
-  display: 'swap',
-})
-*/
+
 const GlobalStyle = createGlobalStyle`
 html,
 body,
@@ -78,16 +72,6 @@ const context: ApiContext = {
   apiRootUrl: process.env.NEXT_PUBLIC_API_BASE_PATH || '/api/proxy',
 }
 
-
-/*
-const authUser: User = {
-  id: 1,
-  username: 'Taketo Yoshida',
-  profileImageUrl: '/users/1.png',
-  dream: '冒険家になることです',
-  numberOfStars: 100,
-}
-*/
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
   const { authUser } = useAuthContext()
@@ -101,17 +85,21 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=5"
         />
-        {/* <title key="title">{SITE_TITLE}</title>
+        <title key="title">{SITE_TITLE}</title>
         <meta name="title" content={SITE_TITLE} key="meta:title" />
         <meta name="description" content={SITE_DESCRIPTION} key="meta:description" />
         <meta property="og:title" content={SITE_TITLE} key="meta:og:title" />
         <meta property="og:description" content={SITE_DESCRIPTION} key="meta:og:description" />
-        <meta property="og:image" content={`${publicRuntimeConfig.domainUrl}/static/images/icon/icon-512.png`} key="meta:og:image" />
-        <meta property="og:site_name" content={SITE_NAME} /> */}
+        <meta property="og:image" content={SITE_IMAGE} key="meta:og:image" />
+        <meta property="og:image:width" content={SITE_IMAGE_WIDTH} />
+        <meta property="og:image:height" content={SITE_IMAGE_HEIGHT} />
+        <meta property="og:site_name" content={SITE_NAME} /> 
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:type" content="website" />
-        {/* <meta property="fb:app_id" content="556485011968079" />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel='icon' href='/images/favicon.ico' />
+        <link rel='apple-touch-icon' href='/images/apple-touch-icon.png' />
+        {/* <meta property="fb:app_id" content="556485011968079" />
         <meta name="twitter:site" content="@truck2hand" /> */}
       </Head>
       <GlobalStyle />

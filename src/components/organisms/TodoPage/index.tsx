@@ -22,7 +22,7 @@ interface TodoProps {
   limit?: number[]
   limitDetail?: string
   rate?: number
-  detail?: string
+  description?: string
   className?: string
   limitPeriod?: string
   onCopyTextClick?: (id: number) => void
@@ -36,7 +36,7 @@ const BaseTodo = ({
   limit,
   limitDetail,
   rate,
-  detail,
+  description,
   className,
   limitPeriod,
   onCopyTextClick,
@@ -79,7 +79,7 @@ const BaseTodo = ({
             <Image
               quality="85"
               src={imageUrl}
-              alt="ご褒美イメージ"
+              alt="Todoイメージ"
               sizes="25.6vw"
               fill
               style={{objectFit:"contain", objectPosition: '50% 50%'}}
@@ -108,12 +108,12 @@ const BaseTodo = ({
               display='inline-block'
               $padding="4px 16px"
               onClick={onDetailBtnClick }
-              disabled={detail ? false : true}
+              disabled={description ? false : true}
             >
               詳細
             </Button1>
           </Flex>
-          {detail && 
+          {description && 
             <Text 
               $fontSize="extraSmall" 
               $fontWeight="400" 
@@ -121,7 +121,7 @@ const BaseTodo = ({
               className='text'
               ref={refText}
               style={{ ['--text-height' as string]: refText.current ? `${refText.current.scrollHeight}px` : '0px', }}
-            >{detail}</Text>
+            >{description}</Text>
           }
         </Flex>
       </Flex>

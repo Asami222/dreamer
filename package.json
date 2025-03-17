@@ -22,6 +22,8 @@
     "ajv": "^8.17.1",
     "bcrypt": "^5.1.1",
     "next": "15.1.6",
+    "pino": "^9.6.0",
+    "pino-logflare": "^0.4.2",
     "react": "^19.0.0",
     "react-content-loader": "^7.0.2",
     "react-dom": "^19.0.0",

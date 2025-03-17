@@ -8,7 +8,12 @@ export type User = {
   dream: string
   limit: string
   numberOfStars: number
+  createdAt: string
 }
+
+export type OptionalUser = 'displayName' | 'profileImageUrl' | 'dream' | 'limit' 
+
+export type NewUser = Omit<User, OptionalUser> & { createdAt: string }
 
 export type Category = 'all' | 'year' | 'month' | 'week' | 'day' | 'time'
 

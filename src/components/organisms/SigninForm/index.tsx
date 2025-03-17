@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import Button2 from "components/atoms/Button2";
@@ -72,7 +73,7 @@ const SigninForm = ({ onSign }: SigninFormProps) => {
             )}
           </Box>
           <Box $textAlign="center">
-            <StyledText $color="text" $fontSize="medium" as="a" href={`/signin/new`}>
+            <StyledText $color="text" $fontSize="medium" as={Link} href={`/signin/new`}>
               新規登録
             </StyledText>
           </Box>

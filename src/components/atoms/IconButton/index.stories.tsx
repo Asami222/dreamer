@@ -48,6 +48,7 @@ export default {
       },
     },
   },
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 } as any as Meta<typeof ChecklistIcon>
 

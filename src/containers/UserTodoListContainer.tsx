@@ -90,7 +90,7 @@ const UserTodoListContainer = ({
           limitDetail={t.detail}
           imageUrl={t.imageUrl}
           rate={t.starNum}
-          detail={t.detail}
+          description={t.description}
           onCopyTextClick={handleCopyTextClick}
           onRemoveTextClick={handleRemoveButtonClick}
         />

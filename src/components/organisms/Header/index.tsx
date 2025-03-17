@@ -1,6 +1,6 @@
 import { Menu, MenuButton, MenuItems, MenuItem, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import styled from "styled-components";
 import AppLogo from "components/atoms/AppLogo";
@@ -142,8 +142,7 @@ opacity: 0.35;
 
 const Header = () => {
 
-  const { authUser, isLoading } = useAuthContext()
-  const { signout } = useAuthContext()
+  const { authUser, isLoading, signout } = useAuthContext()
   const setGlobalSpinner = useGlobalSpinnerActionsContext()
   const router = useRouter()
 
@@ -151,7 +150,7 @@ const Header = () => {
     try {
       setGlobalSpinner(true)
       await signout()
-      router.push(`/`)
+      router.refresh()
     } catch(err: unknown) {
       if(err instanceof Error) {
         window.alert(err.message)

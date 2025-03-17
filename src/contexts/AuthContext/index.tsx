@@ -3,6 +3,7 @@ import useSWR from "swr";
 import signin from "services/auth/signin";
 import signout from "services/auth/signout";
 import newsignin from "services/auth/register";
+import newAddUser from "services/users/new-add-user";
 import type { ApiContext, User } from "types/data";
 //import { fetcher2 } from "utils";
 /*
@@ -56,8 +57,9 @@ export const AuthContextProvider = ({
   }
 
   const newsigninInternal = async (username: string, password: string) => {
-    await newsignin(context, { username, password})
-    await mutate()
+    const user = await newsignin(context, { username, password})
+    await newAddUser(context, {user})
+    await mutate(user)
   }
 
   const signoutInternal = async () => {
