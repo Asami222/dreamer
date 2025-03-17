@@ -58,8 +58,8 @@ export const AuthContextProvider = ({
 
   const newsigninInternal = async (username: string, password: string) => {
     const user = await newsignin(context, { username, password})
-    await newAddUser(context, {user})
-    await mutate(user)
+    const user2 = await newAddUser(context, {user})
+    await mutate(user2)
   }
 
   const signoutInternal = async () => {

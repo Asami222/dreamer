@@ -1,8 +1,8 @@
-import type { ApiContext, User } from 'types/data'
+import type { ApiContext, NewUser, User } from 'types/data'
 import { fetcher } from 'utils'
 
 export type NewAddUsersParams = {
-  user: User
+  user: NewUser
 }
  
 const newAddUser = async (

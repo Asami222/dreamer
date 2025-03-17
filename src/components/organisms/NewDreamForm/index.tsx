@@ -33,7 +33,6 @@ const NewDreamForm = ({ onSave }: NewDreamFormProps) => {
   const onSubmit = (data: NewDreamFormData) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     onSave && onSave(data)
-    console.log(data)
   }
 
   return (
