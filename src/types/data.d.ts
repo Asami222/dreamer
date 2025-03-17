@@ -8,7 +8,7 @@ export type User = {
   dream: string
   limit: string
   numberOfStars: number
-  createdAt: string
+  createdAt?: string
 }
 
 export type OptionalUser = 'displayName' | 'profileImageUrl' | 'dream' | 'limit' 
