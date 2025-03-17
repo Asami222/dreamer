@@ -78,7 +78,6 @@ Todo1.args = {
   todo: '資格取得',
   limit: [3],
   rate: 3,
-  detail: '◯◯になるために20XX年までに△△の資格を取得する',
 }
 
 export const Todo2 = Template.bind({})
@@ -87,5 +86,4 @@ Todo2.args = {
   todo: '資格取得',
   limit: [5],
   rate: 7,
-  detail: '◯◯になるために20XX年までに△△の資格を取得する',
 }
