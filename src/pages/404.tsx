@@ -7,7 +7,7 @@ const NotFoundPage: NextPage = () => {
   
   return (
     <Layout>
-      <Box $textAlign='center'>
+      <Box $textAlign='center' $marginTop={7}>
         <Text $color='text' $fontSize='large'>
         ページが見つかりません
         </Text>

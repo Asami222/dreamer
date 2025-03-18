@@ -197,7 +197,7 @@ export const getStaticProps = async({params}: GetStaticPropsContext) => {
       user,
       todos,
     },
-    revalidate: 60,
+    revalidate: 10,
   }
 }
 
