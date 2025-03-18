@@ -161,18 +161,12 @@ const Todo: NextPage<TodoYearProps> = ({
   )
 }
 
-const getAllTodoPagePaths = async () => {
-
-const context: ApiContext = {
-  apiRootUrl: process.env.API_BASE_URL || 'http://localhost:5000',
-}
-const users = await getAllUsers(context)
-const paths = await Promise.all(users.map((u) =>{ return `/users/${u.id}/todo`}))
-  return paths
-}  
-
 export const getStaticPaths: GetStaticPaths = async() => {
-  const paths = await getAllTodoPagePaths()
+  const context: ApiContext = {
+    apiRootUrl: process.env.API_BASE_URL || 'http://localhost:5000',
+  }
+  const users = await getAllUsers(context)
+  const paths = users.map((u) => `/users/${u.id}/todo`)
   return { paths, fallback: false }
 }
 
