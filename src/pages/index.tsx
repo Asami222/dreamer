@@ -23,7 +23,7 @@ const StyledBox = styled(Box)`
 const Home = () => {
   return (
     <Layout top>
-    <StyledFlex $flexDirection="column" $alignItems="center" $justifyContent="center" $gap="8px" $width="100%" $height="100dvh">
+    <StyledFlex $flexDirection="column" $alignItems="center" $justifyContent="center" $gap="8px" $width="100%" $height="100dvh" $padding="16px 0">
       <AppLogo width="150px"/>
       <StyledBox $width="366px" $height="506px" className="image">
         <Image
