@@ -84,8 +84,8 @@ margin-top: 24px;
   border-bottom: 3px solid #D26871;
 }
 .hover-text {
-    outline-width: 1px;
-    outline-color: ${({theme}) => theme.colors.secondary};
+    background-color: none;
+    background: none;
   }
 }
 `
