@@ -20,8 +20,8 @@ const Input = styled.input.attrs<InputProps>(() => ({
   ${({ $hasBorder, $hasError, theme }) => {
     if ($hasBorder) {
       return css`
-        border: 3px dashed
-          ${$hasError ? theme.colors.borderDash : theme.colors.borderDash};
+        border: 1px solid
+          ${$hasError ? theme.colors.danger : 'transparent'};
         border-radius: 20px;
       `
     } else {

@@ -163,9 +163,7 @@ const Header = () => {
   return (
     <HeaderRoot>
       <Flex $justifyContent="space-between">
-        <NavLink>
           <Link href='/'><AppLogo width="80px"/></Link>
-        </NavLink>
         <Flex $gap="24px">
           <NavLink>
             {(() => {

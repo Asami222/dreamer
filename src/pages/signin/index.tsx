@@ -44,7 +44,7 @@ const SigninPage: NextPage = () => {
         </Box>
       </Flex>
         ):(
-          <Flex $flexDirection="column" $gap="24px" $marginTop={7} >
+          <Flex $flexDirection="column" $gap="24px" $marginTop={3} >
           <Box $width="128px" $height="178px" $margin="0 10% 0 auto">
             <StyledImage
               src="/images/signinImage.webp"

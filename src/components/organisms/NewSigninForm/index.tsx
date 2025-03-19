@@ -37,7 +37,7 @@ const NewSigninForm = ({ onSign }: SigninFormProps) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Flex $flexDirection="column" $gap="32px">
+      <Flex $flexDirection="column" $gap="24px">
         <Box>
               <Box $textAlign="center" $marginBottom={3}><StyledText $color="text" $fontSize="medium">ユーザー名・パスワード作成</StyledText></Box>
           <Box $marginBottom={3}>

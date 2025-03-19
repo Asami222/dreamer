@@ -38,7 +38,7 @@ const SigninForm = ({ onSign }: SigninFormProps) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Flex $flexDirection="column" $gap="32px">
+      <Flex $flexDirection="column" $gap="24px">
         <Box>
           <Box $marginBottom={3}>
             <Input

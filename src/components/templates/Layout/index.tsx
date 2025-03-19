@@ -11,9 +11,10 @@ interface LayoutProps {
 }
 
 const StyledPageWrapper = styled(Flex)`
-  width: 100vw;
+  width: 100dvw;
   min-height: 100dvh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 `
 
 const StyledDiv = styled.div`
@@ -59,7 +60,8 @@ const Layout = ({children,top}: LayoutProps) => {
             sizes="44vw"
             fill
             style={{objectFit:"cover", objectPosition: 'right 50%'}}
-            priority
+            placeholder="blur"
+            blurDataURL={'/images/topImg.webp'}
           />
         </StyledBox>
         <WrapperDiv>
@@ -76,7 +78,8 @@ const Layout = ({children,top}: LayoutProps) => {
             sizes="44vw"
             fill
             style={{objectFit:"cover", objectPosition: 'left 50%'}}
-            priority
+            placeholder="blur"
+            blurDataURL={'/images/topImg.webp'}
           />
     </StyledBox>
     </StyledPageWrapper>
