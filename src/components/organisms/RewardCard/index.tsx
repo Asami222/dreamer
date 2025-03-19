@@ -10,7 +10,7 @@ import { DeleteForeverIcon } from "components/atoms/IconButton";
 import { useTotalStarContext } from 'contexts/TotalStarContext';
 import { useMyRewardsContext } from 'contexts/RewardContext';
 import { useGotRewardContext } from "contexts/GotRewardContext";
-import Modal from '../Modal';
+//import Modal from '../Modal';
 import { Reward, User, ApiContext } from 'types/data';
 import { formatDate } from 'utils';
 import { useGlobalSpinnerActionsContext } from "contexts/GlobalSpinnerContext";
@@ -51,7 +51,6 @@ const RewardCard =({
   onRemoveButtonClick,
 }: RewardCardProps) => {
 
-  const [isOpen, setIsOpen] = useState(false)
   const { totalStar, decreStar } = useTotalStarContext()
   const [isPossible, setIsPossible] = useState(false)
   const router = useRouter();
@@ -74,7 +73,7 @@ const RewardCard =({
 
   const onChangeButtonClick = async() => {
     decreStar(starNum)
-    setIsOpen(isOpen =>!isOpen)
+    //setIsOpen(isOpen =>!isOpen)
     removeReward(rewardId)
     addgotRewardToPage({...gotreward, id: item.id})
     try {
@@ -144,7 +143,6 @@ const RewardCard =({
             disabled={isPossible ? false : true}
             >交換する
           </Button1>
-          <Modal value={isOpen} setValue={setIsOpen} reward={reward} imageUrl={rewardImageUrl} />
         </Flex>
         <RemoveButton size={32} color="borderDash" onClick={() => onRemoveButtonClick && onRemoveButtonClick(rewardId)}/>
       </Flex>

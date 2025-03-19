@@ -27,7 +27,6 @@ const NewDreamFormContainer = ({
     }
 
     const id = authUser.id
-    console.log(id)
 
     try {
       setGlobalSpinner(true)

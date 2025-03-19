@@ -39,11 +39,7 @@ textarea {
   margin: 0;
 }
 body {
-  background-color: ${theme.colors.primary};
-
-  @media (min-width: 441px) {
-    background-color: ${theme.colors.topPrimary};
-  }
+  background-color: ${theme.colors.topPrimary};
 }
 .base {
   font-family: var(--font-roboto), var(--font-m-plus-1p);

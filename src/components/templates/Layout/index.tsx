@@ -12,7 +12,7 @@ interface LayoutProps {
 
 const StyledPageWrapper = styled(Flex)`
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100dvh;
   overflow: auto;
 `
 
@@ -32,8 +32,13 @@ const WrapperDiv = styled.div`
 
 `
 const StyledBox = styled(Box)`
+  display: block;
   background: ${({theme}) => theme.colors.primaryLight};
   flex: 1;
+
+  @media (max-width: 440px) {
+    display: none;
+  }
 `
 
 export const Container = ({children}: Omit<LayoutProps, "top">) => {
@@ -77,4 +82,5 @@ const Layout = ({children,top}: LayoutProps) => {
     </StyledPageWrapper>
   )
 }
+
 export default Layout
