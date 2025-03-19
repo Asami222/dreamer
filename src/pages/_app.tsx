@@ -76,6 +76,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <meta key="charset" name="charset" content="utf-8" />
+        <meta http-equiv="content-language" content="ja" />
         <meta
           key="viewport"
           name="viewport"

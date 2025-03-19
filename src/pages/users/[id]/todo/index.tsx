@@ -52,6 +52,8 @@ const categories: Categories[] = [
 ]
 
 const TodoRoot = styled.div`
+width: 100%;
+overflow: hidden;
 display: flex;
 flex-direction: column;
 gap: 24px;
