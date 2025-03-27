@@ -79,7 +79,7 @@ const Layout = ({children,top}: LayoutProps) => {
             fill
             style={{objectFit:"cover", objectPosition: 'left 50%'}}
             placeholder="blur"
-            blurDataURL={'/images/topImg.webp'}
+            blurDataURL={'/images/topImg1.webp'}
           />
     </StyledBox>
     </StyledPageWrapper>
