@@ -35,9 +35,9 @@ const SigninPage: NextPage = () => {
         </Box>
         <Box $width="128px" $height="178px">
           <StyledImage
-            src="/images/signinImage.webp"
+            src="/images/signinImg.webp"
             alt=""
-            width={249}
+            width={251}
             height={355}
             priority
           />
@@ -45,14 +45,14 @@ const SigninPage: NextPage = () => {
       </Flex>
         ):(
           <Flex $flexDirection="column" $gap="24px" $marginTop={3} >
-          <Box $width="128px" $height="178px" $margin="0 10% 0 auto">
+          <Box $width="126px" $height="178px" $margin="0 10% 0 auto">
             <StyledImage
-              src="/images/signinImage.webp"
+              src="/images/signinImg.webp"
               alt=""
-              width={249}
+              width={251}
               height={355}
               placeholder="blur"
-              blurDataURL={'/images/signinImage.webp'}
+              blurDataURL={'/images/signinImg.webp'}
             />
           </Box>
           <Box $width="100%">

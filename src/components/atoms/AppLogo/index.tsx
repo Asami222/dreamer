@@ -10,9 +10,9 @@ const AppLogo = ({width}: AppLogoProps) => {
     <Box $width={width}>
       <Image
         quality="85"
-        width={569}
+        width={567}
         height={150}
-        src='/images/logo.svg'
+        src='/images/logoApp.webp'
         alt="Dreamer"
         sizes="20vw"
         style={{width: '100%', height: 'auto'}}

@@ -26,10 +26,10 @@ const DreamPage1: NextPage = () => {
         <Flex $flexDirection="column" $gap="24px" $marginTop={3} $marginBottom={6}>
           <Box $width="120px" $height="67px" $margin="40px auto 0">
             <StyledImage
-              src="/images/shootingstar.webp"
+              src="/images/shootingstar1.webp"
               alt=""
-              width={240}
-              height={134}
+              width={241}
+              height={133}
               priority
             />
           </Box>

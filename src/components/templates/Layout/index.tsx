@@ -55,13 +55,13 @@ const Layout = ({children,top}: LayoutProps) => {
         <StyledBox $margin="0 auto" $position='relative'>
           <Image
             quality="85"
-            src='/images/topImg.webp'
+            src='/images/topImg1.webp'
             alt="dremer image"
             sizes="44vw"
             fill
             style={{objectFit:"cover", objectPosition: 'right 50%'}}
             placeholder="blur"
-            blurDataURL={'/images/topImg.webp'}
+            blurDataURL={'/images/topImg1.webp'}
           />
         </StyledBox>
         <WrapperDiv>
@@ -73,7 +73,7 @@ const Layout = ({children,top}: LayoutProps) => {
         <StyledBox $margin="0 auto" $position='relative'>
           <Image
             quality="85"
-            src='/images/topImg.webp'
+            src='/images/topImg1.webp'
             alt="dremer image"
             sizes="44vw"
             fill

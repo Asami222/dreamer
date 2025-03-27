@@ -34,7 +34,7 @@ const UserProfile = ({
     <Flex $flexDirection="column" $gap="24px" $alignItems="center" $marginBottom={2}>
       <Flex $alignItems="center" $gap="16px">
           <ShapeImage
-            src={profileImageUrl ? profileImageUrl : '/images/noImage.png'}
+            src={profileImageUrl ? profileImageUrl : '/images/noImg.webp'}
             shape='circle'
             width="100px"
             height="98px"

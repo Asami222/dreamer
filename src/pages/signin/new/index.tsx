@@ -25,12 +25,12 @@ const NewSigninPage: NextPage = () => {
   return (
     <Layout>
         <Flex $flexDirection="column" $gap="24px" $marginTop={3}>
-          <Box $width="128px" $height="178px" $margin="0 10% 0 auto">
+          <Box $width="123px" $height="175px" $margin="0 10% 0 auto">
             <StyledImage
-              src="/images/signinImage2.webp"
+              src="/images/signinImg2.webp"
               alt=""
-              width={251}
-              height={354}
+              width={247}
+              height={351}
               priority
             />
           </Box>

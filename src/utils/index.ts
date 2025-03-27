@@ -41,26 +41,26 @@ export const formatDate = () => {
 }; 
 
 export const imageData1 = [
-  '/images/icecream.png',
-  '/images/macaron.png',
-  '/images/macaron-red.webp',
-  '/images/macaron-pink.webp',
-  '/images/icecream2.webp',
-  '/images/strawberry.webp',
+  '/images/icecream1.webp',
+  '/images/macaron1.webp',
+  '/images/macaron-red1.webp',
+  '/images/macaron-pink1.webp',
+  '/images/icecream02.webp',
+  '/images/strawberry1.webp',
 ]
 
 export const imageData2 = [
-  '/images/bear1.png',
-  '/images/bear2.png',
-  '/images/flower.png',
+  '/images/bear01.webp',
+  '/images/bear02.webp',
+  '/images/flower1.webp',
 ]
 
 export const imageData3 = [
-  '/images/balloon.webp',
-  '/images/rainbow.webp',
-  '/images/shootingstar.webp',
-  '/images/signinImage.webp',
-  '/images/signinImage2.webp',
+  '/images/balloon1.webp',
+  '/images/rainbow1.webp',
+  '/images/shootingstar1.webp',
+  '/images/signinImg.webp',
+  '/images/signinImg2.webp',
 ]
 
 export const chooseImage = (image: string[]) => {

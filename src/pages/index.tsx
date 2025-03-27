@@ -24,15 +24,15 @@ const Home = () => {
   return (
     <Layout top>
     <StyledFlex $flexDirection="column" $alignItems="center" $justifyContent="center" $gap="8px" $width="100%" $height="100dvh" $padding="16px 0">
-      <AppLogo width="150px"/>
+      <AppLogo width="184px"/>
       <StyledBox $width="366px" $height="506px" className="image">
         <Image
           width={732}
           height={1012}
-          src='/images/home-img.webp'
+          src='/images/homeImg.webp'
           alt="Dreamer Image"
           placeholder="blur"
-          blurDataURL={'/images/home-img.webp'}
+          blurDataURL={'/images/homeImg.webp'}
           style={{
             maxWidth: '100%',
             height: 'auto',

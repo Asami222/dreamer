@@ -59,7 +59,7 @@ ${({ $isFocused, $hasError}) => {
     return 'transparent'
   }
 }};
-background: url('/images/bear2.png'), rgba(243,228,227,0.65);
+background: url('/images/bear02.webp'), rgba(243,228,227,0.65);
 background-repeat: no-repeat;                         /* 画像の繰り返しを指定  */              
 background-position: center center;  
 background-size: contain; 

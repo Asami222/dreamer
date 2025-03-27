@@ -20,7 +20,7 @@ const NewTodo: NextPage = () => {
       <Flex $flexDirection='column' $gap="32px" $alignItems="center" $justifyContent="center" $marginTop={6}>
           <Box $width="132px" $height="81px" $margin="40px auto 0">
             <StyledImage
-              src="/images/rainbow.webp"
+              src="/images/rainbow1.webp"
               alt=""
               width={264}
               height={162}
