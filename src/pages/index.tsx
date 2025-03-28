@@ -23,32 +23,34 @@ const StyledBox = styled(Box)`
 const Home = () => {
   return (
     <Layout top>
-    <StyledFlex $flexDirection="column" $alignItems="center" $justifyContent="center" $gap="8px" $width="100%" $height="100dvh" $padding="16px 0">
-      <AppLogo width="184px"/>
-      <StyledBox $width="366px" $height="506px" className="image">
-        <Image
-          width={732}
-          height={1012}
-          src='/images/homeImg.webp'
-          alt="Dreamer Image"
-          placeholder="blur"
-          blurDataURL={'/images/homeImg.webp'}
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-          }}
-        />
-      </StyledBox>
-      <Box $padding={2}>
-      <Button2 
-        $selectcolor="Pink"
-        as={Link}
-        href="/signin"
-      >
-        はじめる
-      </Button2>
-      </Box>
-    </StyledFlex>
+      <Flex $width="auto" $height="100dvh" $alignItems="center" $justifyContent="center" $padding="20px 0">
+      <StyledFlex $flexDirection="column" $alignItems="center" $justifyContent="center" $gap="8px">
+        <AppLogo width="184px"/>
+        <StyledBox $width="366px" $height="506px" className="image">
+          <Image
+            width={732}
+            height={1012}
+            src='/images/homeImg.webp'
+            alt="Dreamer Image"
+            placeholder="blur"
+            blurDataURL={'/images/homeImg.webp'}
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
+            }}
+          />
+        </StyledBox>
+        <Box $padding={2}>
+        <Button2 
+          $selectcolor="Pink"
+          as={Link}
+          href="/signin"
+        >
+          はじめる
+        </Button2>
+        </Box>
+      </StyledFlex>
+    </Flex>
     </Layout>
   )
 }
