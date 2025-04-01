@@ -1,4 +1,5 @@
 import Link from "next/link";
+//import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import Button2 from "components/atoms/Button2";
@@ -11,6 +12,22 @@ export type SigninFormData = {
   username: string
   passward: string
 }
+
+const StyledButton = styled.button`
+  display: inline-block;
+  background-color: rgba(255,255,255,0.3);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 8px 16px;
+  color: ${({theme}) => theme.colors.text};
+  font-size: 14px;
+  transition:all 0.2s;
+  &:hover {
+  border: 1px solid ${({theme}) => theme.colors.text};
+  cursor: pointer;
+  transition:all 0.5s;
+}
+`
 
 const StyledText = styled(Text)`
 &:hover {
@@ -27,8 +44,16 @@ const SigninForm = ({ onSign }: SigninFormProps) => {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm<SigninFormData>()
+
+  
+  const handleClick = () => {
+    setValue("username", "test")
+    setValue("passward", "111")
+  }
+  
 
   const onSubmit = (data: SigninFormData) => {
     const { username, passward } = data
@@ -80,6 +105,9 @@ const SigninForm = ({ onSign }: SigninFormProps) => {
       </Box>
       <Box $margin="0 auto">
         <Button2 type='submit' $selectcolor='Pink'>ログイン</Button2>
+      </Box>
+      <Box $margin="0 auto">
+        <StyledButton onClick={handleClick}>テストユーザーでログイン</StyledButton>
       </Box>
       </Flex>
     </form>
