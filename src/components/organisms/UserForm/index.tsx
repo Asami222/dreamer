@@ -85,7 +85,7 @@ const UserForm = ({ onSave }: UserFormProps) => {
               name='limit'
               type='text'
               height='48px'
-              placeholder='やること'
+              placeholder='いつまでに叶えたいですか'
             />
           </Flex>
           <Box $margin="40px auto 32px">

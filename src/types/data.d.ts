@@ -12,8 +12,10 @@ export type User = {
 }
 
 export type OptionalUser = 'displayName' | 'profileImageUrl' | 'dream' | 'limit' | 'id'
+export type OptionalUser2 = 'displayName' | 'profileImageUrl' | 'dream' | 'limit' 
 
 export type NewUser = Omit<User, OptionalUser>
+export type TestUser = Omit<User, OptionalUser2>
 
 export type Category = 'all' | 'year' | 'month' | 'week' | 'day' | 'time'
 

@@ -22,7 +22,7 @@ const Star1 =({
   onSelect
 }: StarProps) => {
   return (
-    <StarIcon size={38} color={selected ? "starLight" : "secondary"} onClick={onSelect}/>
+    <StarIcon data-testid="star" size={38} color={selected ? "starLight" : "secondary"} onClick={onSelect}/>
   );
 }
 

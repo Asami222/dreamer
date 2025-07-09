@@ -178,10 +178,9 @@ const Header = () => {
                       src={authUser.profileImageUrl}
                       width="24px"
                       height="24px"
-                      data-testid="profile-shape-image"
                     />
                     :
-                    <AccountCircleIcon size={24} color='text'/>
+                    <AccountCircleIcon size={24} color='text' data-testid="profile-image"/>
                     }
                   </Link>
                 )
@@ -190,7 +189,7 @@ const Header = () => {
               } else {
                 return (
                   <Link href="/signin">
-                    <NoAccountsIcon size={24} color='text'/>
+                    <NoAccountsIcon size={24} color='text' data-testid="profile-noimage"/>
                   </Link>
                 )
               }

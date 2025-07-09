@@ -36,6 +36,7 @@ interface IconWrapperProps {
   cursor?: string
   color?: ThemeColors
   backgroundColor?: string
+  
 }
 
 const IconWrapper = styled.div<IconWrapperProps>`
@@ -58,7 +59,7 @@ const IconWrapper = styled.div<IconWrapperProps>`
 `
 
 export interface IconButtonProps {
-  onClick?: React.MouseEventHandler<SVGSVGElement>
+  onClick?: React.MouseEventHandler<HTMLDivElement>
   color?: ThemeColors
   className?: string
   backgroundColor?: string
@@ -76,12 +77,11 @@ function withIconStyle(
     const cursor = onClick ? 'pointer' : ''
 
     return (
-      <IconWrapper cursor={cursor} size={size} {...rest}>
+      <IconWrapper data-testid="star" cursor={cursor} size={size} role="button" onClick={onClick} {...rest} >
         <Icon
           className={className}
           fontSize="inherit"
           color="inherit"
-          onClick={onClick}
         />
       </IconWrapper>
     )

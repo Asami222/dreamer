@@ -1,40 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+<div id="top"></div>
 
-## Getting Started
+# Dreamer
+### ストーリー
+<!-- プロジェクトについて -->
+Todoアプリにご褒美機能を追加したものを制作しました。Todoを作成すると同時に達成したらもらえる星の数を設定します。別ページで星の数つきのご褒美を設定します。そしてTodoを達成して貯めた星をご褒美と交換できます。Todoは年、月、日、週、時間単位ごとに細かく設定できます。コピーもできるので、新たに作り直さなくても既に作成済みのTodoを利用できます。
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## URL
+https://dreamer-six.vercel.app
+ <br >
+テストユーザーでログインから、ユーザー名とパスワードを入力せずにログインできます。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 使用技術一覧
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<!-- シールド一覧 -->
+<!-- 該当するプロジェクトの中から任意のものを選ぶ-->
+<p style="display: inline">
+  <!-- フロントエンドの言語一覧 -->
+  <img src="https://img.shields.io/badge/-typescript-000000?style=for-the-badge&logo=typescript&logoColor=FFE500">
+  <!-- フロントエンドのフレームワーク一覧 -->
+  <img src="https://img.shields.io/badge/-react-000000?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img src="https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-storybook-000000?style=for-the-badge&logo=storybook&logoColor=FF4785">
+  <img src="https://img.shields.io/badge/-styledcomponents-000000?style=for-the-badge&logo=styledcomponents&logoColor=DB7093">
+  <img src="https://img.shields.io/badge/-headlessui-000000?style=for-the-badge&logo=headlessui&logoColor=66E3FF">
+  <img src="https://img.shields.io/badge/-mui-000000?style=for-the-badge&logo=mui&logoColor=007FFF">
+  <img src="https://img.shields.io/badge/-jest-000000?style=for-the-badge&logo=jest&logoColor=C21325">
+  <!-- バックエンドの言語一覧 -->
+  <!-- ミドルウェア一覧 -->
+  <!-- インフラ一覧 -->
+</p>
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 機能一覧
+- ユーザー認証、データ管理(json-server with express)
+- ユーザー、todo、星の数、ご褒美などのグローバルな状態管理(useContex、useReducer)
+- データ取得、更新(useSWR、fetcher)
+- コンポーネント動作確認(Storybook)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+<!-- 
+- ユーザー登録、ログイン機能(devise)
+- 投稿機能
+  - 画像投稿(refile)
+  - 位置情報検索機能(geocoder)
+- いいね機能(Ajax)
+  - ランキング機能
+- コメント機能(Ajax)
+- フォロー機能(Ajax)
+- ページネーション機能(kaminari)
+  - 無限スクロール(Ajax)
+- 検索機能(ransack)
+-->
+## テスト
+- E2Eテスト(Playwight)
+  - 認証機能
+  - フォーム
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 環境
 
-## Learn More
+<!-- 言語、フレームワーク、ミドルウェア、インフラの一覧とバージョンを記載 -->
 
-To learn more about Next.js, take a look at the following resources:
+| 言語・フレームワーク  | バージョン |
+| --------------------- | ---------- |
+| Node.js               | 22.2.0    |
+| React                 | ^19.0.0     |
+| Next.js               | 15.1.6     |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+その他のパッケージのバージョンは package.json を参照してください. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## プロジェクト詳細
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h3 align="center">ご飯の予約</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/food-area.webp" width="500" style="max-width: 100%;" />
+</p>
+<h3 align="center">天気情報取得</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/weather-area.webp" width="500" style="max-width: 100%;" />
+</p>
+<h3 align="center">毎日訪れてアイテムを獲得</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/home-area.webp" width="500" style="max-width: 100%;" />
+</p>
+<h3 align="center">使い方ページ</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/howto-area.webp" width="500" style="max-width: 100%;" />
+</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+<p align="right">(<a href="#top">トップへ</a>)</p>
