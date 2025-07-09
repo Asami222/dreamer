@@ -51,9 +51,12 @@ https://dreamer-six.vercel.app
 - 検索機能(ransack)
 -->
 ## テスト
-- E2Eテスト(Playwight)
-  - 認証機能
+- ユニットテスト(Jest)
+  - ログイン、サインイン
   - フォーム
+  - ヘッダー
+  - 他
+  
 
 ## 環境
 
@@ -70,21 +73,34 @@ https://dreamer-six.vercel.app
 
 ## プロジェクト詳細
 
-<h3 align="center">ご飯の予約</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/food-area.webp" width="500" style="max-width: 100%;" />
+<h3 align="center">ログイン状態による画像表示の切り替え</h3>
+<p>
+useContextフックを使用し、グローバルにユーザーのログイン状態を管理しています。未ログイン、ユーザーイメージを登録済の場合のログイン、イメージを登録していない場合のログイン状態で表示画像を切り替え分かりやすいUIにしています。
 </p>
-<h3 align="center">天気情報取得</h3>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/weather-area.webp" width="500" style="max-width: 100%;" />
+  <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/auth-user.webp" width="500" style="max-width: 100%;" />
 </p>
-<h3 align="center">毎日訪れてアイテムを獲得</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/home-area.webp" width="500" style="max-width: 100%;" />
+<h3 align="center">ログインと新規登録のUI切り替え</h3>
+<p>
+新規登録でユーザー情報を登録した場合は、新規登録の時だけ表示するページに移行するようになっています。
 </p>
-<h3 align="center">使い方ページ</h3>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/egg-or-chicken/main/public/git/howto-area.webp" width="500" style="max-width: 100%;" />
+  <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/signin.webp" width="328" style="max-width: 100%;" />
+</p>
+<h3 align="center">ユーザー情報登録とご褒美登録</h3>
+<p>
+ユーザー情報は後から、ポップアップのメニューより内容を編集することができます。ユーザーユーザー設定、ご褒美設定はどちらもreact-hook-formを使用してバリデーションチェックをしています。
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/form.webp" width="500" style="max-width: 100%;" />
+</p>
+<h3 align="center">Todo作成</h3>
+<p>
+todoは、useContextとuseReducerフックを使用し、グローバルにtodoの配列を状態管理しています。作成時は
+react-hook-formのバリデーションチェックを使用したformで登録、Todoページでは
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/todo.webp" width="328" style="max-width: 100%;" />
 </p>
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
