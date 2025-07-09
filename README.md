@@ -80,27 +80,33 @@ useContextフックを使用し、グローバルにユーザーのログイン�
 <p align="center">
   <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/auth-user.webp" width="500" style="max-width: 100%;" />
 </p>
-<h3 align="center">ログインと新規登録のUI切り替え</h3>
+<h3 align="center">新規登録の場合のみ表示</h3>
 <p>
-新規登録でユーザー情報を登録した場合は、新規登録の時だけ表示するページに移行するようになっています。
+新規登録でユーザー情報を登録した場合は、新規登録の時にだけ表示するページに移行するようになっています。
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/signin.webp" width="328" style="max-width: 100%;" />
 </p>
-<h3 align="center">ユーザー情報登録とご褒美登録</h3>
+<h3 align="center">ユーザーフォームとご褒美設定フォーム</h3>
 <p>
-ユーザー情報は後から、ポップアップのメニューより内容を編集することができます。ユーザーユーザー設定、ご褒美設定はどちらもreact-hook-formを使用してバリデーションチェックをしています。
+ユーザー情報は後から、ポップアップのメニューより内容を編集することができます。ユーザー設定、ご褒美設定はどちらもreact-hook-formを使用してバリデーションチェックをしています。
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/form.webp" width="500" style="max-width: 100%;" />
 </p>
-<h3 align="center">Todo作成</h3>
+<h3 align="center">Todoページ</h3>
 <p>
-todoは、useContextとuseReducerフックを使用し、グローバルにtodoの配列を状態管理しています。作成時は
-react-hook-formのバリデーションチェックを使用したformで登録、Todoページでは
+TodoはuseContextでグローバルに状態管理し、useReducerで作成、削除などの更新関数を作成し、フォームやTodoページのコピー、完了ボタンで使用しています。フォームではreact-hook-formを利用しバリデーションチェックを行なっています。
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/todo.webp" width="328" style="max-width: 100%;" />
+  <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/todo.webp" width="500" style="max-width: 100%;" />
+</p>
+<h3 align="center">ユーザーページ</h3>
+<p>
+ユーザーページでは手持ちの星の数や夢などのユーザー情報と、設定済のご褒美一覧を見ることができます。手持ちの星の数よりご褒美の星の数の方が大きい場合は、ボタンをクリックできないようになっています。ご褒美獲得記録ページでは、今までに星と交換したご褒美を獲得日付つきで見ることができ、ご褒美の表示がなくなってもこのページを見ればわかるようになっています。また、星の履歴も残すことによって新たに作成するご褒美の参考にすることができます。
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Asami222/dreamer/main/public/git/reward.webp" width="328" style="max-width: 100%;" />
 </p>
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
