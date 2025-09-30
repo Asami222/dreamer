@@ -32,7 +32,7 @@ https://dreamer-six.vercel.app
 </p>
 
 ## 機能一覧
-- ユーザー認証、データ管理(json-server with express)
+- ユーザー認証、データ管理(json-server with express、Heroku)
 - ユーザー、todo、星の数、ご褒美などのグローバルな状態管理(useContex、useReducer)
 - データ取得、更新(useSWR、fetcher)
 - コンポーネント動作確認(Storybook)
